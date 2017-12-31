@@ -61,7 +61,9 @@ Content-type: text/html
 </body></html>
 Connection closed by foreign host.
 ```
-
+ 
+注:也可以在本机打开浏览器,在地址栏输入127.0.0.1:8888 查看服务器返回的静态内容。
+ 
  2.请求动态内容
 首先需要将服务器文件夹cgi-add中的程序adder.c进行编译：
 
@@ -87,3 +89,5 @@ Welcome to add.com: THE Internet addition portal.
 Connection closed by foreign host.
 ```
 可以看出服务器调用了adder，计算并返回了两个参数的和，完成了加法计算。
+
+注:也可以在本机打开浏览器,在地址栏输入127.0.0.1:8888/cgi-bin/adder?1500&213 查看服务器返回的动态内容。
